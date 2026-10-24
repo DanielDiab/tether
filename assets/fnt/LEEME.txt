@@ -1,7 +1,16 @@
-FUENTE (pendiente)
+FUENTE DEL JUEGO
 
-Se espera el archivo:  game.ttf   (la fuente de pixel que entrega el curso)
+  font_8x8.png + font_8x8.json
 
-Mientras no exista, FontService usa la fuente por defecto de pygame y el HUD se
-dibuja igual. Al copiar aqui la fuente oficial con ese nombre, el juego la toma
-automaticamente: la ruta esta en assets/cfg/window.json y assets/cfg/scenes.json.
+Es una fuente de MAPA DE BITS de 5x7 pixeles en celdas de 8x8, generada por
+tools/make_pixel_font.py. A la resolucion del juego (320x256) una fuente vectorial
+queda ilegible, por eso los glifos se dibujan pixel a pixel.
+
+- El .json lleva el charset y las metricas (avance de 6 px, alto de celda 8 px).
+- Los glifos son blancos y FontService los tiñe con el color de cada texto.
+- En los JSON de configuracion, "size": 8 dibuja a tamaño 1x y "size": 16 a 2x.
+- Para editar o agregar caracteres: tools/make_pixel_font.py, diccionario GLYPHS.
+
+Si el curso entrega una fuente de pixel en TTF tambien sirve: basta con poner el
+archivo aqui y cambiar la ruta en window.json y scenes.json. FontService detecta la
+extension y soporta ambas.

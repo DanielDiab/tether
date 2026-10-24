@@ -11,7 +11,13 @@
         "assets/snd/explosion.ogg"
     ],
     "fonts": [
-        { "path": "assets/fnt/game.ttf", "size": 8 },
-        { "path": "assets/fnt/game.ttf", "size": 16 }
+        {
+            "path": "assets/fnt/font_8x8.png",
+            "size": 8
+        },
+        {
+            "path": "assets/fnt/font_8x8.png",
+            "size": 16
+        }
     ]
 }

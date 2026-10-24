@@ -1,0 +1,9 @@
+{
+    "charset": " ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-.,:!?/+*()='",
+    "cell_w": 8,
+    "cell_h": 8,
+    "glyph_w": 5,
+    "glyph_h": 7,
+    "advance": 6,
+    "base_size": 8
+}
