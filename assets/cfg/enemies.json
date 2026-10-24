@@ -1,0 +1,16 @@
+{
+    "Lander": {
+        "image": "assets/img/lander.png",
+        "velocity_descend": 22,
+        "velocity_search": 34,
+        "velocity_abduct": 20,
+        "search_interval": 2.0,
+        "abduct_range": 10,
+        "animations": {
+            "number_frames": 2,
+            "list": [
+                { "name": "MOVE", "start": 0, "end": 1, "framerate": 6 }
+            ]
+        }
+    }
+}

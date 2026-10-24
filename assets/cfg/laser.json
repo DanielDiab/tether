@@ -1,0 +1,6 @@
+{
+    "image": "assets/img/laser.png",
+    "velocity": 620,
+    "lifetime": 0.55,
+    "sound": "assets/snd/laser.ogg"
+}

@@ -1,0 +1,16 @@
+{
+    "actions": [
+        { "name": "PLAYER_LEFT",  "device": "KEYBOARD", "keys": ["left", "a"] },
+        { "name": "PLAYER_RIGHT", "device": "KEYBOARD", "keys": ["right", "d"] },
+        { "name": "PLAYER_UP",    "device": "KEYBOARD", "keys": ["up", "w"] },
+        { "name": "PLAYER_DOWN",  "device": "KEYBOARD", "keys": ["down", "s"] },
+        { "name": "PLAYER_FIRE",  "device": "KEYBOARD", "keys": ["space"] },
+        { "name": "PLAYER_FIRE",  "device": "MOUSE",    "buttons": [1] },
+        { "name": "GAME_START",   "device": "KEYBOARD", "keys": ["return", "space"] },
+        { "name": "GAME_PAUSE",   "device": "KEYBOARD", "keys": ["p"] },
+        { "name": "GAME_MENU",    "device": "KEYBOARD", "keys": ["escape"] },
+        { "name": "DEBUG_COLLIDERS", "device": "KEYBOARD", "keys": ["f1"] },
+        { "name": "CHEAT_ADD_LIFE",  "device": "KEYBOARD", "keys": ["f2"] },
+        { "name": "CHEAT_NEXT_WAVE", "device": "KEYBOARD", "keys": ["f3"] }
+    ]
+}

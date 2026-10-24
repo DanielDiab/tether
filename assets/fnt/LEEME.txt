@@ -1,0 +1,7 @@
+FUENTE (pendiente)
+
+Se espera el archivo:  game.ttf   (la fuente de pixel que entrega el curso)
+
+Mientras no exista, FontService usa la fuente por defecto de pygame y el HUD se
+dibuja igual. Al copiar aqui la fuente oficial con ese nombre, el juego la toma
+automaticamente: la ruta esta en assets/cfg/window.json y assets/cfg/scenes.json.

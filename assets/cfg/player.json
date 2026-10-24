@@ -1,0 +1,13 @@
+{
+    "image": "assets/img/player.png",
+    "velocity": 140,
+    "invulnerable_time": 2.0,
+    "blink_interval": 0.1,
+    "animations": {
+        "number_frames": 2,
+        "list": [
+            { "name": "IDLE",   "start": 0, "end": 0, "framerate": 1 },
+            { "name": "THRUST", "start": 0, "end": 1, "framerate": 12 }
+        ]
+    }
+}

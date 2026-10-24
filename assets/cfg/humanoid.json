@@ -1,0 +1,14 @@
+{
+    "image": "assets/img/humanoid.png",
+    "walk_velocity": 9,
+    "fall_velocity": 45,
+    "drop_distance": 4,
+    "score_rescue": 500,
+    "turn_chance_per_second": 0.25,
+    "animations": {
+        "number_frames": 2,
+        "list": [
+            { "name": "WALK", "start": 0, "end": 1, "framerate": 4 }
+        ]
+    }
+}

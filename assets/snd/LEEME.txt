@@ -1,0 +1,13 @@
+SONIDOS (pendientes - semana 3)
+
+El juego ya pide estos archivos a traves del Service Locator y funciona sin ellos
+(si faltan, simplemente no suena nada):
+
+  laser.ogg       -> disparo de la nave        (lo usa assets/cfg/laser.json)
+  explosion.ogg   -> destruccion de un Lander  (lo usa assets/cfg/explosion.json)
+
+IMPORTANTE: deben estar en formato .ogg. El .wav NO funciona en la exportacion web
+con pygbag. Para generarlos: https://sfxr.me/ y convertir con Audacity.
+
+Para agregar un sonido nuevo basta con ponerlo aqui y referenciarlo desde el JSON
+correspondiente; no hay que tocar codigo.

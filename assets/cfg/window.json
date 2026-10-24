@@ -1,0 +1,34 @@
+{
+    "title": "DEFENDER - MISW-4407",
+    "size": { "w": 320, "h": 256 },
+    "bg_color": { "r": 0, "g": 0, "b": 0 },
+    "framerate": 60,
+    "layout": {
+        "play_area": { "y": 48, "h": 208 },
+        "terrain_color": [80, 255, 80],
+        "scanner": {
+            "x": 40, "y": 12, "w": 240, "h": 24,
+            "colors": {
+                "frame": [120, 120, 255],
+                "terrain": [0, 140, 0],
+                "player": [255, 255, 255],
+                "lander": [0, 255, 0],
+                "humanoid": [0, 255, 255],
+                "view": [255, 255, 0]
+            }
+        },
+        "hud": [
+            { "text": "SCORE", "font": "assets/fnt/game.ttf", "size": 8,
+              "color": [255, 255, 255], "pos": { "x": 4, "y": 2 } },
+            { "field": "score", "fmt": "{:06d}", "font": "assets/fnt/game.ttf", "size": 8,
+              "color": [255, 255, 0], "pos": { "x": 44, "y": 2 } },
+            { "field": "lives", "fmt": "NAVES {}", "font": "assets/fnt/game.ttf", "size": 8,
+              "color": [255, 255, 255], "pos": { "x": 316, "y": 2 }, "align": "right" },
+            { "field": "wave", "fmt": "OLA {}", "font": "assets/fnt/game.ttf", "size": 8,
+              "color": [0, 255, 255], "pos": { "x": 160, "y": 38 }, "align": "center" },
+            { "field": "humanoids_alive", "fmt": "ASTRONAUTAS {}",
+              "font": "assets/fnt/game.ttf", "size": 8,
+              "color": [0, 255, 255], "pos": { "x": 4, "y": 38 } }
+        ]
+    }
+}

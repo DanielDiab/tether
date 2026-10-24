@@ -1,0 +1,40 @@
+{
+    "initial_scene": "MENU",
+    "scenes": {
+        "MENU": { "type": "MENU" },
+        "LEVEL_01": { "type": "PLAY", "level": "assets/cfg/level_01.json" },
+        "GAME_OVER": { "type": "GAME_OVER" }
+    },
+    "menu": {
+        "start_scene": "LEVEL_01",
+        "texts": [
+            { "text": "DEFENDER", "font": "assets/fnt/game.ttf", "size": 16,
+              "color": [255, 255, 0], "pos": { "x": 160, "y": 60 }, "align": "center" },
+            { "text": "MISW-4407", "font": "assets/fnt/game.ttf", "size": 8,
+              "color": [120, 120, 255], "pos": { "x": 160, "y": 84 }, "align": "center" },
+            { "text": "ENTER O ESPACIO PARA JUGAR", "font": "assets/fnt/game.ttf", "size": 8,
+              "color": [255, 255, 255], "pos": { "x": 160, "y": 140 }, "align": "center" },
+            { "text": "FLECHAS O WASD  -  ESPACIO DISPARA", "font": "assets/fnt/game.ttf",
+              "size": 8, "color": [0, 255, 255], "pos": { "x": 160, "y": 158 },
+              "align": "center" },
+            { "text": "ESC SALE", "font": "assets/fnt/game.ttf", "size": 8,
+              "color": [120, 120, 120], "pos": { "x": 160, "y": 176 }, "align": "center" }
+        ]
+    },
+    "game_over": {
+        "next_scene": "MENU",
+        "texts": [
+            { "text": "GAME OVER", "font": "assets/fnt/game.ttf", "size": 16,
+              "color": [255, 80, 80], "pos": { "x": 160, "y": 70 }, "align": "center" },
+            { "field": "score", "fmt": "PUNTAJE {:06d}", "font": "assets/fnt/game.ttf",
+              "size": 8, "color": [255, 255, 0], "pos": { "x": 160, "y": 110 },
+              "align": "center" },
+            { "field": "wave", "fmt": "OLA ALCANZADA {}", "font": "assets/fnt/game.ttf",
+              "size": 8, "color": [0, 255, 255], "pos": { "x": 160, "y": 128 },
+              "align": "center" },
+            { "text": "ENTER PARA VOLVER AL MENU", "font": "assets/fnt/game.ttf",
+              "size": 8, "color": [255, 255, 255], "pos": { "x": 160, "y": 170 },
+              "align": "center" }
+        ]
+    }
+}

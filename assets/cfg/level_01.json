@@ -1,0 +1,19 @@
+{
+    "world": { "width": 1920 },
+    "camera": { "player_screen_x": 160 },
+    "player_spawn": { "x": 160, "y": 100, "max_lasers": 3 },
+    "game": { "lives": 3, "smart_bombs": 3 },
+    "terrain": {
+        "seed": 1981,
+        "segments": 64,
+        "min_height": 18,
+        "max_height": 54
+    },
+    "waves": [
+        { "landers": 5,  "humanoids": 10 },
+        { "landers": 7,  "humanoids": 10 },
+        { "landers": 9,  "humanoids": 10 },
+        { "landers": 11, "humanoids": 10 },
+        { "landers": 13, "humanoids": 10 }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "images": [
+        "assets/img/player.png",
+        "assets/img/laser.png",
+        "assets/img/lander.png",
+        "assets/img/humanoid.png",
+        "assets/img/explosion.png"
+    ],
+    "sounds": [
+        "assets/snd/laser.ogg",
+        "assets/snd/explosion.ogg"
+    ],
+    "fonts": [
+        { "path": "assets/fnt/game.ttf", "size": 8 },
+        { "path": "assets/fnt/game.ttf", "size": 16 }
+    ]
+}
