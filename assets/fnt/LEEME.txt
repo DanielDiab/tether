@@ -11,6 +11,6 @@ queda ilegible, por eso los glifos se dibujan pixel a pixel.
 - En los JSON de configuracion, "size": 8 dibuja a tamaño 1x y "size": 16 a 2x.
 - Para editar o agregar caracteres: tools/make_pixel_font.py, diccionario GLYPHS.
 
-Si el curso entrega una fuente de pixel en TTF tambien sirve: basta con poner el
+Una fuente de pixel en TTF tambien sirve: basta con poner el
 archivo aqui y cambiar la ruta en window.json y scenes.json. FontService detecta la
 extension y soporta ambas.

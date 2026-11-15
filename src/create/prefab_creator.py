@@ -82,7 +82,7 @@ def create_player(world: esper.World, player_cfg: dict, pos: pygame.Vector2) -> 
 
 def create_laser(world: esper.World, player_pos: pygame.Vector2, player_area: pygame.Rect,
                  facing: Facing, laser_cfg: dict) -> int:
-    """El laser de Defender es un haz horizontal que sale en la direccion de la nave."""
+    """El laser es un haz horizontal que sale en la direccion de la nave."""
     texture = ServiceLocator.textures_service.get(laser_cfg["image"])
     vel = pygame.Vector2(facing.value * laser_cfg["velocity"], 0)
     entity = create_sprite(world, pygame.Vector2(0, 0), vel, texture)

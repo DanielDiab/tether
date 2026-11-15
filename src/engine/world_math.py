@@ -1,4 +1,4 @@
-"""Matematicas del mundo de Defender.
+"""Matematicas del mundo cilindrico del juego.
 
 El planeta es un cilindro: el mundo mide `world_width` pixeles y su borde derecho se
 pega con el izquierdo. Por eso ninguna distancia horizontal se puede calcular con una

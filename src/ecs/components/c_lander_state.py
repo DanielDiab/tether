@@ -9,7 +9,7 @@ class LanderState(Enum):
 
 
 class CLanderState:
-    """Patron State del Lander, el enemigo basico de Defender.
+    """Patron State del Lander, el enemigo basico del juego.
 
     Los parametros vienen de enemies.json para poder ajustar la dificultad sin
     recompilar nada.

@@ -1,4 +1,4 @@
-SONIDOS (pendientes - semana 3)
+SONIDOS (pendientes)
 
 El juego ya pide estos archivos a traves del Service Locator y funciona sin ellos
 (si faltan, simplemente no suena nada):

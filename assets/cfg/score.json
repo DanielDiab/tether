@@ -1,8 +1,3 @@
 {
-    "lander": 150,
-    "mutant": 150,
-    "baiter": 200,
-    "bomber": 250,
-    "pod": 1000,
-    "swarmer": 150
+    "lander": 150
 }

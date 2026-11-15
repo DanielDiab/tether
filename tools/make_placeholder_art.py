@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """Genera los sprites PLACEHOLDER del juego.
 
-Sirve para trabajar sin los recursos definitivos del curso. Las dimensiones son las
-que espera assets/cfg/*.json, asi que al reemplazar un PNG por el oficial basta con
+Sirve para trabajar mientras no hay arte definitivo. Las dimensiones son las
+que espera assets/cfg/*.json, asi que al reemplazar un PNG por el final basta con
 respetar el tamaño de cuadro indicado abajo y no hay que tocar codigo.
 
 Uso: python tools/make_placeholder_art.py

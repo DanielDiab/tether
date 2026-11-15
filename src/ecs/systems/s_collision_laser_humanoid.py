@@ -12,7 +12,7 @@ from src.engine.collision import collide_world
 
 def system_collision_laser_humanoid(world: esper.World, world_width: float,
                                     explosion_cfg: dict) -> None:
-    """En Defender el laser tambien mata a los astronautas: disparar tiene costo."""
+    """El laser tambien mata a los astronautas: disparar tiene costo."""
     for laser_entity, (l_t, l_s, _tag) in world.get_components(
             CTransform, CSurface, CTagLaser):
         for h_entity, (h_t, h_s, _h_st) in world.get_components(

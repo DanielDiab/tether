@@ -1,7 +1,7 @@
-# Analisis de arquitectura - Defender (MISW-4407)
+# Arquitectura de Tether
 
-> Borrador para el documento calificable de post-mortem grupal. Las secciones marcadas
-> con [COMPLETAR] las llena el equipo; el resto ya corresponde al codigo actual.
+Como esta armado el juego por dentro: que hace cada componente, en que orden corren los
+sistemas y por que se tomaron las decisiones principales.
 
 ## 1. Vision general
 
@@ -24,7 +24,7 @@ loop, escenas, servicios de recursos y utilidades matematicas.
 | `CSurface` | textura, `area` (cuadro actual), `flip_h` | el area define tambien el tamaño de colision |
 | `CAnimation` | cuadros y animaciones | animacion 2D cuadro a cuadro |
 | `CInputCommand` | nombre de accion, tecla, dispositivo, fase | patron Command |
-| `CCamera` | ventana del mundo visible | bono de camara |
+| `CCamera` | ventana del mundo visible | el mundo no cabe en pantalla |
 | `CTerrain` | vertices del relieve | el suelo no es una linea recta |
 | `CText` / `CHudField` | texto en pantalla / enlace a un dato de partida | HUD y menus dentro de ECS |
 | `CGameState` | puntaje, vidas, olas, astronautas | estado de partida como componente singleton |
@@ -72,18 +72,24 @@ no necesita saber nada del nivel.
 **Todo numero vive en JSON.** 11 archivos de configuracion; ajustar la dificultad no
 toca codigo.
 
-[COMPLETAR] Diagrama de componentes/sistemas.
+## 5. ECS frente a herencia
 
-## 5. Patrones
+En una jerarquia de clases clasica (`Entidad -> Enemigo -> Lander`) cada comportamiento
+nuevo obliga a decidir en que nivel del arbol vive, y los comportamientos compartidos
+entre ramas terminan duplicados o subidos a una clase base que ya no los necesita.
 
-[COMPLETAR] Analisis de ECS frente a herencia tradicional, con ejemplos del propio
-proyecto (ver `src/ecs/components/tags/` y como un Mutant sera un Lander con otros
-componentes en vez de una subclase).
+Aqui una entidad es lo que sus componentes dicen que es:
 
-## 6. Reflexion
+- Un Lander es `CTransform + CVelocity + CSurface + CAnimation + CLanderState + CTagLander`.
+- El laser es `CTransform + CVelocity + CSurface + CLifetime + CTagLaser`: comparte el
+  movimiento y el render con todo lo demas, y `CLifetime` le da su duracion sin que
+  ningun otro sistema se entere.
+- El parpadeo de invulnerabilidad es un `CBlink` que se agrega a la nave al morir y se
+  quita al terminar. No hay un flag `is_invulnerable` en una clase `Player`.
 
-[COMPLETAR] Que salio bien, que salio mal, que cambiariamos.
+Las tags (`src/ecs/components/tags/`) son componentes vacios que solo sirven para filtrar
+consultas: `system_collision_laser_lander` pide `CTagLaser` y `CTagLander`, y no necesita
+saber nada mas de ellos.
 
-## 7. Evolucion semana a semana
-
-[COMPLETAR] Bitacora.
+Un enemigo nuevo se arma con los componentes que ya existen mas su propia maquina de
+estados, sin tocar los sistemas de movimiento, render, colision o radar.

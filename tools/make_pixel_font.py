@@ -2,7 +2,7 @@
 """Genera la fuente de mapa de bits del juego.
 
 La fuente por defecto de pygame es ilegible a 8 pixeles, que es el tamaño de texto
-del Defender original. Esta herramienta dibuja un set de glifos de 5x7 en celdas de
+de los arcades de principios de los 80. Esta herramienta dibuja un set de glifos de 5x7 en celdas de
 8x8 y escribe:
 
   assets/fnt/font_8x8.png    hoja de glifos (blanca, se tiñe al dibujar)

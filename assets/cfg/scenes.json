@@ -8,9 +8,9 @@
     "menu": {
         "start_scene": "LEVEL_01",
         "texts": [
-            { "text": "DEFENDER", "font": "assets/fnt/font_8x8.png", "size": 16,
+            { "text": "TETHER", "font": "assets/fnt/font_8x8.png", "size": 16,
               "color": [255, 255, 0], "pos": { "x": 160, "y": 60 }, "align": "center" },
-            { "text": "MISW-4407", "font": "assets/fnt/font_8x8.png", "size": 8,
+            { "text": "POR DANIEL DIAB", "font": "assets/fnt/font_8x8.png", "size": 8,
               "color": [120, 120, 255], "pos": { "x": 160, "y": 84 }, "align": "center" },
             { "text": "ENTER O ESPACIO PARA JUGAR", "font": "assets/fnt/font_8x8.png", "size": 8,
               "color": [255, 255, 255], "pos": { "x": 160, "y": 140 }, "align": "center" },

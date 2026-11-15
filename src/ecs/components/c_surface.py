@@ -6,7 +6,7 @@ class CSurface:
 
     `area` es el recorte de la textura que se dibuja (el cuadro actual si la textura
     es un spritesheet animado) y define el tamaño de la entidad para colisiones.
-    `flip_h` permite voltear el sprite: la nave de Defender mira a izquierda o derecha.
+    `flip_h` permite voltear el sprite: la nave mira a izquierda o derecha.
     """
 
     def __init__(self, surface: pygame.Surface) -> None:

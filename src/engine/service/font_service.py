@@ -6,7 +6,7 @@ igual que `pygame.font.Font`), asi que quien dibuja texto no sabe cual esta usan
 - Fuente de mapa de bits (.png + .json con el charset): es la del juego. A 8 pixeles
   una fuente vectorial se convierte en una mancha, asi que los glifos se dibujan
   pixel a pixel desde una hoja de sprites.
-- Fuente TrueType (.ttf): por si se reemplaza por la fuente oficial del curso.
+- Fuente TrueType (.ttf): por si se reemplaza por otra fuente pixel.
 
 Si el archivo pedido no existe se cae a la fuente por defecto de pygame, para que el
 juego nunca se quede sin HUD.

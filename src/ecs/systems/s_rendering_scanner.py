@@ -15,7 +15,7 @@ def system_rendering_scanner(world: esper.World, screen: pygame.Surface, c_cam: 
                              scanner_cfg: dict) -> None:
     """Radar de largo alcance: comprime TODO el planeta en una franja superior.
 
-    Es el elemento mas reconocible de Defender: muestra enemigos y astronautas fuera
+    Es la pieza central del juego: muestra enemigos y astronautas fuera
     de pantalla, y un marco con la porcion del mundo que se esta viendo.
     """
     rect = pygame.Rect(scanner_cfg["x"], scanner_cfg["y"],

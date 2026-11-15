@@ -14,7 +14,7 @@ from src.engine.world_math import signed_delta_x
 
 def system_lander_state(world: esper.World, delta_time: float, play_rect: pygame.Rect,
                         world_width: float) -> None:
-    """Patron State del Lander, el enemigo que define a Defender.
+    """Patron State del Lander, el enemigo que define el juego.
 
     DESCEND baja al planeta, SEARCH busca astronautas, ABDUCT se los lleva al techo.
     """
@@ -91,7 +91,7 @@ def _do_abduct(world: esper.World, c_t: CTransform, c_v: CVelocity, c_lst: CLand
     if c_t.pos.y > play_rect.y:
         return
     # Llego al techo con el astronauta: se pierde el astronauta.
-    # TODO semana 3: aqui el Lander debe convertirse en Mutant en lugar de soltarlo.
+    # TODO: aqui el Lander podria transformarse en un enemigo mas agresivo.
     world.delete_entity(target)
     states = world.get_component(CGameState)
     if states:
